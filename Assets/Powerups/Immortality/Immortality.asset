@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00b5506c65b4b964fb1f465c8197db7d, type: 3}
+  m_Name: Immortality
+  m_EditorClassIdentifier: 
+  isActive: 0
+  upgradeCosts: 050000000a000000
+  currentLevel: 1
+  maxLevel: 3
+  duration: {fileID: 11400000, guid: d287df0e456da2145bebe11201498374, type: 2}
+  speedBoost: {fileID: 11400000, guid: 6368a0a6ee5ed4140a6ceb26d22e74f0, type: 2}

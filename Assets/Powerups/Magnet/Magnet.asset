@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05dfe267f59d5344789ed52d2a272801, type: 3}
+  m_Name: Magnet
+  m_EditorClassIdentifier: 
+  isActive: 0
+  upgradeCosts: 050000000a000000
+  currentLevel: 1
+  maxLevel: 3
+  duration: {fileID: 11400000, guid: de53b786bb8932a488b187745ac1ac99, type: 2}
+  range: {fileID: 11400000, guid: 2394e5555dac87947ac7ed081bfd5341, type: 2}
+  speed: {fileID: 11400000, guid: e5f19c41b1cb4b548be816c42723b858, type: 2}
