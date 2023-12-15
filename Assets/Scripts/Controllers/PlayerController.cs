@@ -35,11 +35,13 @@ public class PlayerController : MonoBehaviour
             {
                 rb.velocity = (new Vector2(0f, jumpForce));
                 jumped = true;
+                SoundManager.instance.PlayOnceJump();
             }
             else if (!doubleJumped)
             {
                 rb.velocity = (new Vector2(0f, jumpForce));
                 doubleJumped = true;
+                SoundManager.instance.PlayOnceJump();
             }
         }
         if (Input.GetMouseButton(0) && rb.velocity.y <= 0)

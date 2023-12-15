@@ -27,12 +27,14 @@ public class MenuManager : MonoBehaviour
     {
         mainMenuPanel.SetActive(false);
         upgradeStorePanel.SetActive(true);
+        SoundManager.instance.PlayOnceClick();
     }
 
     public void CloseUpgradeStore()
     {
         mainMenuPanel.SetActive(true);
         upgradeStorePanel.SetActive(false);
+        SoundManager.instance.PlayOnceClick();
     }
 
     private void Start()
@@ -79,6 +81,7 @@ public class MenuManager : MonoBehaviour
     {
         if(coins >= powerup.GetNextUpgradeCost() && !powerup.IsMaxedOut())
         {
+            SoundManager.instance.PlayOnceClick();
             ReduceCoinsAmount(powerup.GetNextUpgradeCost());
             powerup.Upgrade();
             UpdateUI();
@@ -103,11 +106,13 @@ public class MenuManager : MonoBehaviour
 
     public void PlayButton()
     {
+        SoundManager.instance.PlayOnceClick();
         SceneManager.LoadScene("Game");
     }
 
     public void SoundButton()
     {
+        SoundManager.instance.PlayOnceClick();
         SoundManager.instance.ToggleMuted();
         UpdateUI();
     }

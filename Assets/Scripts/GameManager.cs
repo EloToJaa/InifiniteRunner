@@ -64,6 +64,7 @@ public class GameManager : MonoBehaviour
 
     public void CoinCollected(int value = 1)
     {
+        SoundManager.instance.PlayCoinGrab();
         coins += value;
         PlayerPrefs.SetInt("Coins", coins);
     }
